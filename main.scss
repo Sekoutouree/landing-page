@@ -7,10 +7,30 @@
 body {
     margin: 0;
     font-family: 'Nato Sans JP', sans-serif;
+    line-height: 1.6;
 }
 
 img {
     max-width: 100%;
     // height: auto;
     display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    background-color: blue;
+    color: white;
 }

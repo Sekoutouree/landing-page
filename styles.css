@@ -1,0 +1,105 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    border: 1px solid ;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nato Sans JP', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    /* height: auto; */
+    display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+section {
+    padding: 7em 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+
+/* any element that is adjacent sibling, ie after another sibling, direct child of spacing. good for uniform spacing */
+.spacing > * + * {
+    margin-top: var(--spacer, 2rem); 
+    /* 2rem if spacer doesn't work */
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    background-color: var(--clr-accent, blue);
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out;
+    opacity: 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.first-title {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: solid;
+    color: rgb(255, 254, 254);
+}
+
+.first-para {
+    color: rgb(255, 254, 254);
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem);
+}
+
+.header {
+    text-align: center;
+    padding: 15em 0;
+    background-image: url(/img/shoe-7.jpg);
+    background-color: rgb(150, 148, 148);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+/* @supports (property: value) {
+    .class {
+    }
+   }
+   test if the browser supports a particular property or property:value combination */(
+
+    /* @supports (background-blend-mode: multiply) {
+        .header {
+            background-image: url(/img/shoe-7.jpg);   
+            background-blend-mode: multiply;
+        }
+       } */
+

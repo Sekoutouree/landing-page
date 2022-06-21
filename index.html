@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header class="header">
+     <div class="container spacing">
+        <!-- h1.main-text+p+a.btn -->
+        <h1 class="first-title">Herr Shoes Ghana</h1>
+        <p class="first-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deserunt minima eveniet nam expedita minus eos non laborum? Saepe!</p>
+        <a href="#" class="btn">Check out our offers!</a>
+        <!-- .spacing > * + * {
+            margin-top: var(--spacer, 2rem); 
+        } added margin-top to btn, first-para but not first-titles -->
+    </div>
+</header>
+<main>
+    <!-- section.featured+section.our-products -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="split">
+                <!-- a.featured-item*3>img+p.featured-details -->
+                <a href="#" class="featured-item">
+                    <img src="img/shoe-1.png" alt="red vans shoe" class="featured-img">
+                    <p class="featured-details"><span class="price">GHC 200</span></p>
+                </a>
+                <a href="#" class="featured-item">
+                    <img src="img/shoe-2.png" alt="white puma shoe" class="featured-img">
+                    <p class="featured-details"><span class="price">GHC 200</span></p>
+                </a>
+                <a href="#" class="featured-item">
+                    <img src="img/shoe-3.png" alt="white LV shoe" class="featured-img">
+                    <p class="featured-details"><span class="price">GHC 200</span></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="our-products">
+        <!-- .container>h2.section-title -->
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <!-- article.product*3>h3.product-title+p.product-description+a.btn -->
+            <article class="product shoe-red spacing">
+                <img src="img/shoe-4.png" alt="red sneaker" class="product-image">
+                <h3 class="product-title">An awesome shoe</h3>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quibusdam quia atque soluta possimus repellat quas quae provident.</p>
+                <a href="" class="btn">Buy item</a>
+            </article>
+
+            <article class="product shoe-blue shoe-left spacing">
+                <img src="img/shoe-5.png" alt="blue sneaker with white sole" class="product-image">
+                <h3 class="product-title">A really nice shoe</h3>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quibusdam quia atque soluta possimus repellat quas quae provident.</p>
+                <a href="" class="btn">Buy item</a>
+            </article>
+
+            <article class="product shoe-lightblue spacing">
+                <img src="img/shoe-6.png" alt="white and skyblue nike sneaker" class="product-image">
+                <h3 class="product-title">Another awesome shoe</h3>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque quibusdam quia atque soluta possimus repellat quas quae provident.</p>
+                <a href="" class="btn">Buy item</a>
+            </article>
+        </div>
+    </section>
+</main>
+<body>
+    
+</body>
+</html>
