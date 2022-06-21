@@ -4,9 +4,42 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* * {
     border: 1px solid ;
 } */
+
+nav {
+    display: flex;
+    background:rgb(160, 156, 156);
+    position: fixed;
+    /* top: -50px; */
+    width: 100%;
+    z-index: 1;
+    padding: 8px 16px;
+    transition: top 0.3s;
+    justify-content: space-around;
+}
+
+.nav-top a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+
+a:hover {
+    color: rgb(48, 150, 153);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;  
+    gap: 5em;  
+}
 
 body {
     margin: 0;
@@ -101,7 +134,7 @@ section {
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    --clr-accent: rgb(56, 197, 28);
 }
 
 /* @supports (property: value) {
